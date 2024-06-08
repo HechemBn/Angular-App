@@ -1,0 +1,12 @@
+<div class="container">
+  <nav>
+    <button class="btn btn-success" (click)="goToRoute('/accueil') ; setActionCourante('accueil')"
+      [style.backgroundColor]="actionCourante === 'accueil'? 'yellow' :'green'">Accueil</button>
+    <button class="btn btn-success" (click)="goToRoute('/produits')  ; setActionCourante('produits')"
+      [style.backgroundColor]="actionCourante === 'produits'? 'yellow' :'green'  ">Produits</button>
+    <button class="btn btn-success"   (click)="goToRoute('/ajouterProduit') ; setActionCourante('ajouterProduit'); "
+      [style.backgroundColor]="actionCourante === 'ajouterProduit'? 'yellow' :'green'  ">Ajouter Produit</button>
+  </nav>
+</div>
+<router-outlet>
+</router-outlet>
